@@ -160,7 +160,9 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
 .hero-copy .sub{margin-bottom:18px}
 
 /* ===== Hero v4 (2026-11-10): girls visible, cloud "Coming soon", info label ===== */
-.hero.world-hero{min-height:max(100svh,700px);padding-top:84px;background-position:center 92%}
+.hero.world-hero{min-height:max(100svh,640px);padding-top:84px;background:#2f7fd6 url(hero-girls.jpg) center bottom/cover no-repeat}
+.hero.world-hero::before{background:linear-gradient(180deg,rgba(40,120,220,.25) 0%,rgba(0,0,0,0) 35%)}
+
 .hero.world-hero .logo{width:min(440px,78%,40vh);margin:0 auto}
 .cloud-badge{position:relative;width:min(400px,76%,38vh);margin:-14px auto 0;aspect-ratio:420/150;
   filter:drop-shadow(0 10px 14px rgba(30,60,140,.28))}
@@ -178,10 +180,17 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
 .where svg{width:26px;height:18px;flex:none}
 .where.on-dark{margin-top:6px}
 @media (max-width:860px){
-  .hero.world-hero{padding-top:78px;background-position:36% 100%}
+  .hero.world-hero{padding-top:78px;min-height:88svh;background-position:48% 100%}
   .hero.world-hero .logo{width:min(290px,72%)}
   .cloud-badge{width:min(300px,78%)}
   .cloud-badge .cb-text{font-size:min(40px,9.6vw)}
   .hero-copy{margin:4px 16px 0;padding:10px 12px 12px}
   .where{font-size:.84rem;padding:8px 10px}
 }
+
+.hero-band{background:linear-gradient(180deg,#fff 0%,var(--cream) 100%);text-align:center;padding:26px 0 30px;border-top:6px solid #fff;box-shadow:0 -12px 30px -18px rgba(31,22,64,.4)}
+.hero-band .tag{font-family:"Vaseline Extra",Nunito,sans-serif;font-size:clamp(1.4rem,3vw,2.1rem);color:var(--purple);margin:0 0 4px}
+.hero-band .sub{margin:0 0 14px;color:var(--ink-soft);font-weight:600}
+.hero-band .where{background:#fff;border:2px solid #f0e8ff;box-shadow:0 10px 24px -14px rgba(31,22,64,.45)}
+
+.hero.world-hero .scroll-cue{display:none}
