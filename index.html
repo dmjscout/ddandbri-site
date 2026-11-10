@@ -14,7 +14,7 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/vaseline-extra.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/w-home-day.jpg" as="image">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css?v=4">
 </head>
 <body>
 
@@ -33,12 +33,21 @@
   <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
   <div class="wrap">
     <h1><img class="logo" src="assets/logo.png" alt="DD &amp; Bri"></h1>
-    <p class="soon-pill"><span aria-hidden="true">✨</span> Coming soon <span aria-hidden="true">✨</span></p>
+    <div class="cloud-badge" role="text" aria-label="Coming soon">
+      <svg class="cb-shape" viewBox="0 0 420 150" aria-hidden="true">
+        <g fill="#fff">
+          <circle cx="78" cy="92" r="46"/><circle cx="140" cy="62" r="54"/><circle cx="215" cy="50" r="60"/>
+          <circle cx="285" cy="66" r="52"/><circle cx="343" cy="94" r="42"/>
+          <rect x="60" y="80" width="300" height="58" rx="29"/>
+        </g>
+      </svg>
+      <span class="cb-text display" aria-hidden="true"><span class="cb-pink">Coming</span> <span class="cb-purple">soon</span></span>
+    </div>
     <div class="hero-copy">
       <p class="tag">Two sisters. One big world to wonder about.</p>
       <p class="sub">A gentle 3D-animated show for curious kids ages 2–6.</p>
       <p class="where">
-        <svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0033"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>
+        <svg width="26" height="18" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0033"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>
         <span>Watch free on <b>YouTube</b>: search <b>“DD &amp; Bri”</b> or <b>@DDandBriTV</b></span>
       </p>
     </div>
@@ -97,7 +106,7 @@
         <h2 class="display">Power of Wonder</h2>
         <p>Where do rainbows come from? What do bunnies like to eat? How does a tiny seed grow into a tree? DD and Bri turn everyday wonder into an adventure, one short episode at a time.</p>
         <p class="where on-dark">
-          <svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0033"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>
+          <svg width="26" height="18" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0033"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>
           <span>First episodes coming soon to YouTube at <b>@DDandBriTV</b></span>
         </p>
       </div>
