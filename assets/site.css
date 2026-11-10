@@ -194,3 +194,27 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
 .hero-band .where{background:#fff;border:2px solid #f0e8ff;box-shadow:0 10px 24px -14px rgba(31,22,64,.45)}
 
 .hero.world-hero .scroll-cue{display:none}
+
+/* ===== v6 (2026-11-10): text-only Coming soon..., purple-pink boxes everywhere ===== */
+.soon-title{margin:-4px auto 0;font-size:min(64px,11vw,6vh);line-height:1;position:relative;z-index:2}
+.soon-title .cb-pink{color:var(--pink)}
+.soon-title .cb-purple{color:var(--purple)}
+.soon-title .cb-pink,.soon-title .cb-purple{text-shadow:
+  3px 0 0 #fff,-3px 0 0 #fff,0 3px 0 #fff,0 -3px 0 #fff,2px 2px 0 #fff,-2px 2px 0 #fff,2px -2px 0 #fff,-2px -2px 0 #fff,
+  0 6px 0 #fff,3px 5px 0 #fff,-3px 5px 0 #fff,0 10px 14px rgba(30,40,120,.35)}
+:root{--wonder:linear-gradient(120deg,rgba(124,58,237,.94),rgba(157,92,255,.9) 55%,rgba(255,79,160,.92))}
+.world .sign,.world .sister,.world .feature,.world .glass,.hero-band{background:var(--wonder)!important;color:#fff;border-color:rgba(255,255,255,.55)!important;
+  box-shadow:0 30px 60px -30px rgba(91,33,182,.7)}
+.world .sign .eyebrow,.world .glass .eyebrow{color:#FFE2F1}
+.world .sign h2,.world .glass h2,.world .glass h3,.world .feature h3{color:#fff}
+.world .sister h3{color:#fff;text-shadow:0 3px 0 rgba(91,33,182,.55)}
+.world .sister p,.world .feature p,.world .glass p,.world .lede{color:rgba(255,255,255,.93)!important}
+.world .sister .age{background:rgba(255,255,255,.22)!important;color:#fff!important}
+.world .checks li{background:rgba(255,255,255,.16)!important;box-shadow:none}
+.world .checks small{color:rgba(255,255,255,.9)}
+.world .glass a:not(.btn){color:#fff;text-decoration:underline}
+.world .glass .btn-ghost{color:#fff!important;border-color:#fff!important}
+.hero-band{border-top:0}
+.hero-band .tag{color:#fff;text-shadow:0 3px 0 rgba(91,33,182,.5)}
+.hero-band .sub{color:rgba(255,255,255,.93)}
+.hero-band .where,.where.on-dark{background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);color:#fff;box-shadow:none}
