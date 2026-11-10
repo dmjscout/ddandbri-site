@@ -158,3 +158,23 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
 .site-foot .wrap{display:block}
 .hero-copy{display:inline-block;margin-top:4px;padding:14px 26px 22px;border-radius:30px;background:rgba(31,22,64,.28);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);max-width:720px}
 .hero-copy .sub{margin-bottom:18px}
+
+/* ===== Hero v3 (2026-11-10): girls visible, coming soon, info badge ===== */
+.hero.world-hero{padding-top:92px;background-position:center 92%}
+.hero.world-hero .logo{width:min(470px,80%);margin:0 auto}
+.soon-pill{display:table;margin:2px auto 12px;padding:7px 20px;border-radius:999px;background:#fff;color:var(--purple);
+  font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem;box-shadow:0 10px 24px -10px rgba(31,22,64,.5)}
+.hero-copy{display:block;margin:0 auto;padding:12px 22px 14px;max-width:560px}
+.hero.world-hero .tag{font-size:clamp(1.05rem,2vw,1.35rem);margin:0 0 2px}
+.hero.world-hero .sub{margin:0 0 10px;font-size:.98rem}
+.where{display:inline-flex;align-items:center;gap:10px;margin:0;padding:9px 16px;border-radius:16px;background:rgba(255,255,255,.95);
+  color:var(--ink);font-weight:600;font-size:.95rem;line-height:1.35;text-align:left;cursor:default}
+.where svg{width:26px;height:18px;flex:none}
+.where.on-dark{margin-top:6px}
+@media (max-width:860px){
+  .hero.world-hero{padding-top:80px;background-position:36% 100%}
+  .hero.world-hero .logo{width:min(300px,74%)}
+  .hero-copy{margin:0 16px;padding:10px 14px 12px}
+  .hero.world-hero .sub{display:none}
+  .where{font-size:.85rem;padding:8px 12px}
+}
